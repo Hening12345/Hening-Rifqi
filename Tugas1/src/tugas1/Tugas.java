@@ -21,12 +21,20 @@ public class Tugas extends javax.swing.JFrame {
     public Tugas() {
         initComponents();
         
-        Balok1.panjang = 0;
-        Balok1.lebar = 0;
-        Balok1.tinggi = 0;
-        Balok2.panjang = 0;
-        Balok2.lebar = 0;
-        Balok2.tinggi = 0;
+        Balok1.setPanjang(6);
+        Balok1.setLebar(4);
+        Balok1.setTinggi(4);
+        System.out.println("Panjang = "+ Balok1.getPanjang());
+        System.out.println("Lebar = "+ Balok1.getLebar());
+        System.out.println("Tinggi = "+ Balok1.getTinggi());
+        System.out.println("Volume = "+ Balok1.getVolume());
+        Balok2.panjang = 1;
+        Balok2.lebar = 1;
+        Balok2.tinggi = 1;
+        System.out.println("Panjang = "+ Balok2.getPanjang());
+        System.out.println("Lebar = "+ Balok2.getLebar());
+        System.out.println("Tinggi = "+ Balok2.getTinggi());
+        System.out.println("Volume = "+ Balok2.getVolume());
     }
 
     /**
@@ -229,7 +237,7 @@ public class Tugas extends javax.swing.JFrame {
         }else{
             volume = Balok2.panjang * Balok2.lebar * Balok2.tinggi;
         }
-        jLabel5.setText("Volume = " + volume + "cm2");
+        jLabel5.setText("Volume = " + volume + "cm3");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
